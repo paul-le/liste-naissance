@@ -23,9 +23,10 @@
                 </section>
                 <main id="formulairemain">
                     <form>
-                    <div id="urgentform">
-                        Urgent<br><br>
-                        <div>
+                    <div id="checkbox">
+                        <div id="urgentform">
+                        <span class="gras">Urgent</span><br>
+                        <div><br>
                             <input type="checkbox" name="Couches"checked>
                             <label for="Couches">Couches</label>
                         </div>
@@ -36,16 +37,65 @@
                         <div>
                             <input type="checkbox" name="Lit"checked>
                             <label for="Lit">Lit+Matelas</label>
-                        </div>
-                    </div><br>
-                    Moyen urgent<br><br>
+                        </div><br>
+                        <span class="gras">Moyen urgent</span><br>
                     <div id="formulairemoyenurgent">
+                        <div><br>
+                            <input type="checkbox" name="kit"checked>
+                            <label for="kit">Kit d'allaitement</label>
+                        </div>
                         <div>
-                            <input type="checkbox" name="Couches"checked>
-                            <label for="Couches">Couches</label>
+                            <input type="checkbox" name="gigoteuse"checked>
+                            <label for="gigoteuse">Gigoteuse</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="chanceliere">
+                            <label for="chanceliere">Chancelière</label>
+                        </div><br>
+                    </div>
+                    <span class="gras">Pas urgent</span><br>
+                    <div id="formulairepasurgent">
+                        <div><br>
+                            <input type="checkbox" name="tapis">
+                            <label for="tapis">Tapis d'éveil</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="peluche"checked>
+                            <label for="peluche">Peluche d'éveil</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="doudou">
+                            <label for="doudou">Doudou brodé</label>
                         </div>
                     </div>
+                    </div>
+                    </div>
+                    <section id="ajouterrangement">
+                    <div>
+                        <label for="ajouterarticle"><span class="gras">Ajouter un article :</span></label><br>
+                        <textarea placeholder="Nom de l'article + lien" id="ajouter" name="ajouterarticle" cols="33"></textarea>
+                    </div>
+                    <div>
+                        <label for=descriptionarticle><span class="gras">Description de l'article :</span></label><br>
+                        <textarea placeholder="Description de l'article" id="ajouter" name="ajouterarticle" rows="4" cols="33"></textarea>
+                    </div>
+                    <div>
+                        <label for=commentaire><span class="gras">Commentaire :</span></label><br>
+                        <textarea placeholder="Commentaire sur l'article" id="ajouter" name="commentaire" rows="4" cols="33"></textarea>
+                    </div>
+                    <label for="nomprenom"><span class="gras">Nom Prénom :</span></label><br>
+                    <textarea placeholder="Nom & Prénom" id="ajouter" name="nomprenom" cols="33"></textarea>
+                    <div><br>
+                        <span class="gras">Ajouter comme article déjà acheté ?</span><br><br>
+                        <label for="oui">Oui</label>
+                            <input type="radio"  name="oui" required>
+                        <label for="non">Non</label>
+                            <input type="radio"  name="non">
+                    </div>
+                    </section>
+                    <input id="ajouterbutton" type="submit" name="ajouter" value="Ajouter">
                     </form>
+                    <img id="thank" src="Images/thankyoupng.png">
                 </main>
             </section>
     </body>
