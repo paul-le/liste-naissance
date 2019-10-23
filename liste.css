@@ -84,6 +84,11 @@ li{
 
 }
 
+#social img:hover{
+    width: 50%;
+    transition: all 0.7s ease-out;
+}
+
 #home{
     margin-top: 15%;
     text-align: center;
@@ -254,6 +259,9 @@ form{
     display: flex;
     flex-direction: row;
     margin-right: 10%;
+    border-right:2px solid black;
+    padding-right: 5%;
+    height: 100%;
 }
 
 #urgentform{
@@ -281,6 +289,7 @@ textarea{
 
 #ajouterrangement{
     margin-right: 15%;
+    padding-right:  ;
 }
 
 #ajouterbutton{
@@ -300,4 +309,22 @@ textarea{
     height: 15%;
     margin-left: 10%;
     margin-top: 20%;
+    animation-name: jump;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+
+#urgencespace{
+    margin-top: 7%;
+}
+
+
+
+@keyframes jump {
+    25% {top: 0;animation-timing-function: ease-in;}
+    50% {top: 140px;height: 140px;animation-timing-function: ease-out;}
+    55% {top: 160px; height: 120px;border-radius: 40px / 20px;animation-timing-function: ease-in;}
+    65% {top: 120px; height: 140px;border-radius: 40px;animation-timing-function: ease-out;}
+    95% {top: 0;animation-timing-function: ease-in;}
+    100% {top: 0;animation-timing-function: ease-in;}
 }
